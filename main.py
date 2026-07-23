@@ -31,25 +31,26 @@ class SAPMSApp:
         )
 
     def register_student_flow(self):
-    self.student_manager.register_student()
+        self.student_manager.register_student()
+    
     def view_students_flow(self):
         self.student_manager.view_students()
 
     def search_student_flow(self):
-    self.student_manager.search_student()
+        self.student_manager.search_student()
     
     def update_student_flow(self):
-    self.student_manager.update_student()
+        self.student_manager.update_student()
 
     def record_attendance_flow(self):
-    self.attendance_manager.record_attendance()
+        self.attendance_manager.record_attendance()
 
     def record_grade_flow(self):
-    self.grade_manager.record_grades()
+        self.grade_manager.record_grades()
 
     def view_reports_flow(self):
-    self.attendance_manager.attendance_report()
-    self.grade_manager.performance_report()
+        self.attendance_manager.attendance_report()
+        self.grade_manager.performance_report()
     
     def view_at_risk_flow(self):
         self.report_manager.view_at_risk_students()
