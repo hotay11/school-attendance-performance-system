@@ -6,11 +6,7 @@ from validators import (
     validate_attendance_status,
     prompt_until_valid,
 )
-from db_manager import DatabaseManager
-from student_manager import StudentManager
-from attendance_manager import AttendanceManager
-from grade_manager import GradeManager
-from report_manager import ReportManager
+
 
 
 MENU_TEXT = """
