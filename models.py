@@ -15,6 +15,10 @@ class Student:
     date_of_birth: str
     grade_level: str
     enrollment_date: str
+    
+    @property
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"
 
     @classmethod
     def from_row(cls, row):
