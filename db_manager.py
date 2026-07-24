@@ -11,6 +11,7 @@ DB_FILENAME = "sapms.db"
 class DatabaseManager:
     def __init__(self, db_filename=DB_FILENAME):
         self.connection = sqlite3.connect(db_filename)
+        self.connection.row_factory = sqlite3.Row      
         self.connection.execute("PRAGMA foreign_keys = ON;")
         self._create_tables()
 
